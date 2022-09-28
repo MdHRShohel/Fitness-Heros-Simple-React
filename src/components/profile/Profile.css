@@ -24,7 +24,7 @@
     justify-content: space-around;
     line-height: .5em;
     border-radius: 16px;
-
+    margin: 20px 0;
 }
 
 .user-details span{
@@ -32,12 +32,13 @@
     font-weight: 400;
 }
 
-.breakTime-container {
+.time-container {
     display: flex;
     justify-content: space-around;
     background-color:rgb(85, 183, 239);
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 .btn {
@@ -59,14 +60,15 @@
 }
 
 .activity-completed-btn {
-    background-color: rgb(85, 183, 239);
+    background-color: rgb(2, 129, 255);
     width: 100%;
     border: none;
     padding: 20px;
     margin-top: 50px;
     color: #fff;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .activity-completed-btn:hover {

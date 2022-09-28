@@ -15,11 +15,13 @@ const Home = () => {
     return (
         <div className='home'>
             <h1><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon> Fitness Heroes</h1>
-            <h2>Select today's exercise</h2>
+            <h2>Select Today's Exercise</h2>
 
             <div className="cards">
             {
-                exercise.map(card => <Card card={card}></Card>)
+                exercise.map(card => <Card 
+                    key={card.name}
+                    card={card}></Card>)
             }
             </div>
         </div>

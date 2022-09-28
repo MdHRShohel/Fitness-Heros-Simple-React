@@ -1,0 +1,74 @@
+.profile{
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.profile-info{
+    display: flex;
+}
+
+.profile-info img{
+    height: 90px;
+    width: 80px;
+    border-radius: 20%;
+}
+
+.user-info{
+    padding-left: 20px;
+}
+
+.user-details{
+    background-color:rgb(85, 183, 239);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    line-height: .5em;
+    border-radius: 16px;
+
+}
+
+.user-details span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.breakTime-container {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(85, 183, 239);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border: none;
+}
+
+
+.exercise-details {
+    display: flex;
+    background-color:rgb(85, 183, 239);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.activity-completed-btn {
+    background-color: rgb(85, 183, 239);
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-top: 50px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.activity-completed-btn:hover {
+    background-color: darkblue;
+}

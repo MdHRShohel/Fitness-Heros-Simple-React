@@ -1,0 +1,44 @@
+[
+  {
+    "picture": "https://cutt.ly/TVJJ5wh",
+    "name": "Walking",
+    "description": "Any exercise program should include cardiovascular exercise, which strengthens the heart and burns calories. And walking is something you can do anywhere, anytime, with no equipment other than a good pair of shoes.",
+    "For_Age": "14-80",
+    "Time_required": 120
+  },
+  {
+    "picture": "https://cutt.ly/QVJKtYh",
+    "name": "Interval training",
+    "description": "Whether you're a beginner or an exercise veteran, a walker or an aerobic dancer, adding interval training to your cardiovascular workout will boost your fitness level and help you lose weight.",
+    "For_Age": "20-25",
+    "Time_required": 30
+  },
+  {
+    "picture": "https://cutt.ly/dVJKoJC",
+    "name": "Squats",
+    "description": "Strength training is essential, the experts say. The more muscular fitness you have, says Cotton, the greater the capacity you have to burn calories.",
+    "For_Age": "20-30",
+    "Time_required": 40
+  },
+  {
+    "picture": "https://cutt.ly/GVJKfIZ",
+    "name": "Lunges",
+    "description": "Like squats, lunges work all the major muscles of the lower body: gluteals, quadriceps, and hamstrings.",
+    "For_Age": "20-25",
+    "Time_required": 20
+  },
+  {
+    "picture": "https://cutt.ly/DVJKl6i",
+    "name": "Push-ups",
+    "description": "If done correctly, the push-up can strengthen the chest, shoulders, triceps, and even the core trunk muscles, all at one time.",
+    "For_Age": "20-25",
+    "Time_required": 30
+  },
+  {
+    "picture": "https://cutt.ly/pVJKQpQ",
+    "name": "Abdominal Crunches",
+    "description": "Who doesn't want firm, flat abs? Experts say that when done correctly, the familiar crunch is a good choice to target them.",
+    "For_Age": "20-25",
+    "Time_required": 50
+  }
+]

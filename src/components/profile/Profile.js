@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.css';
 import image from './HR_Shohel.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-  import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Profile = () => {
     return (
@@ -22,11 +22,11 @@ const Profile = () => {
                     <p>Weight</p>
                 </div>
                 <div>
-                    <h1>6.5<span></span></h1>
+                    <h1>5.6<span></span></h1>
                     <p>Height</p>
                 </div>
                 <div>
-                    <h1>25<span>yrs</span></h1>
+                    <h1>21<span>yrs</span></h1>
                     <p>Age</p>
                 </div>
             </div>
@@ -47,11 +47,11 @@ const Profile = () => {
 
                 <div className='exercise-details'>
                     <h4>Exercise time</h4>
-                    <p><span>200</span> seconds</p>
+                    <p><span>00</span> seconds</p>
                 </div>
                 <div className='exercise-details'>
                     <h4>Break time</h4>
-                    <p><span id='showBreakTime'>15</span> seconds</p>
+                    <p><span id='showBreakTime'>00</span> seconds</p>
                 </div>
 
                 <button className='activity-completed-btn'>Activity Completed</button>

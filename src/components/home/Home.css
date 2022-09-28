@@ -1,4 +1,15 @@
 .home{
-    border: 5px solid goldenrod;
+    padding: 20px 50px;
     background-color: #dadada;
+}
+
+.home h1{
+    color: rgb(38, 70, 219);
+    padding-bottom: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
 }

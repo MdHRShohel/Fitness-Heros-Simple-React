@@ -24,7 +24,8 @@ const Profile = ({time}) => {
     const notify = () => toast("WOW Congratulations!! You have completed your exercise today. You can take a break now. Thank you for using our service. Have a nice day.");
 
     return (
-        <div className='profile'>
+        <div>
+        <div className="profile">
             <div className="profile-info">
                 <div>
                 <img src={image} alt="" />
@@ -78,6 +79,7 @@ const Profile = ({time}) => {
 
                 <button onClick={notify} className='activity-completed-btn'>Activity Completed</button>
                 <ToastContainer />
+        </div>
         </div>
     );
 };

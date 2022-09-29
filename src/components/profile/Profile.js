@@ -9,12 +9,9 @@ import './Profile.css';
 const Profile = ({time}) => {
      let total = 0;
 
-     const exerciseTime=localStorage.getItem('exerciseTime'); 
-
       for (const pr in time) {
           console.log(pr);
           total += time[pr];
-          localStorage.setItem('exerciseTime', total);
       }    
     
     //state for local storage break time
@@ -89,7 +86,7 @@ const Profile = ({time}) => {
 
                 <div className='exercise-details'>
                     <h4>Exercise time</h4>
-                    {exerciseTime ? <h4>{exerciseTime} seconds</h4> : <h4>0 seconds</h4>}
+                    <h4>{total} seconds</h4>
                 </div>
                 <div className='exercise-details'>
                     <h4>Break time</h4>

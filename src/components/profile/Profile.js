@@ -4,18 +4,13 @@ import React from 'react';
 import image from './HR_Shohel.png';
 import './Profile.css';
 
-const Profile = (props) => {
-    const {time} =props;
-    
-
+const Profile = ({time}) => {
      let total = 0;
 
       for (const pr in time) {
           console.log(pr);
           total += time[pr];
-          console.log(total);
       }
-
 
     const handleBtn = (breakTime) => {
         const time = document.getElementById(breakTime);

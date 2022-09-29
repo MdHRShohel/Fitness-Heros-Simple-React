@@ -79,6 +79,8 @@ const Profile = ({time}) => {
 
                 <button onClick={notify} className='activity-completed-btn'>Activity Completed</button>
                 <ToastContainer />
+                <br />
+                <br />
         </div>
         </div>
     );

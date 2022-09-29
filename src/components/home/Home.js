@@ -3,6 +3,7 @@ import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDumbbell} from '@fortawesome/free-solid-svg-icons';
 import Card from '../Card/Card';
+import Blog from '../blog/Blog';
 
 const Home = (props) => {
     const {time, setTime} = props;
@@ -36,6 +37,7 @@ const Home = (props) => {
                     ></Card>)
             }
             </div>
+            <Blog></Blog>
         </div>
     );
 };

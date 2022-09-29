@@ -4,13 +4,26 @@ import React from 'react';
 import image from './HR_Shohel.png';
 import './Profile.css';
 
-const Profile = () => {
+const Profile = (props) => {
+    const {time} =props;
+    
+
+     let total = 0;
+
+      for (const pr in time) {
+          console.log(pr);
+          total += time[pr];
+          console.log(total);
+      }
+
+
     const handleBtn = (breakTime) => {
         const time = document.getElementById(breakTime);
         const showTime = document.getElementById('showTime');
         const value = time.innerText;
         showTime.innerText = value;
     }
+
 
     return (
         <div className='profile'>
@@ -58,7 +71,7 @@ const Profile = () => {
 
                 <div className='exercise-details'>
                     <h4>Exercise time</h4>
-                    <h4><span>00</span> seconds</h4>
+                    <h4>{total} seconds</h4>
                 </div>
                 <div className='exercise-details'>
                     <h4>Break time</h4>

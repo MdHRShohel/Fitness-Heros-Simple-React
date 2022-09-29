@@ -1,5 +1,7 @@
 .profile{
     background-color: rgb(240, 240, 240);
+    position: sticky;
+    top: 0;
     padding: 20px;
 }
 

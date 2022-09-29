@@ -1,15 +1,21 @@
-.home{
-    padding: 20px 50px;
-    background-color: #dadada;
+.home {
+  padding: 20px 50px;
+  background-color: #dadada;
 }
 
-.home h1{
-    color: rgb(38, 70, 219);
-    padding-bottom: 20px;
+.home h1 {
+  color: rgb(38, 70, 219);
+  padding-bottom: 20px;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 15px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

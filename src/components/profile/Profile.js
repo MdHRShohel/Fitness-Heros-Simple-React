@@ -1,27 +1,46 @@
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import image from './HR_Shohel.png';
 import './Profile.css';
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = ({time}) => {
      let total = 0;
 
+     const exerciseTime=localStorage.getItem('exerciseTime'); 
+
       for (const pr in time) {
           console.log(pr);
           total += time[pr];
-      }
+          localStorage.setItem('exerciseTime', total);
+      }    
+    
+    //state for local storage break time
+    const [brTime, setBTime] = useState('');
+    useEffect(()=>{
+        const brTime = localStorage.getItem('brTime');
+        if(brTime){
+            setBTime(brTime);
+            (document.getElementById('showTime')).innerText = brTime;
+        }
+    },[]);
 
-    const handleBtn = (breakTime) => {
+      useEffect(()=>{
+          localStorage.setItem('brTime', brTime);
+      },[brTime]);
+
+    function handleBtn(breakTime) {
         const time = document.getElementById(breakTime);
         const showTime = document.getElementById('showTime');
         const value = time.innerText;
         showTime.innerText = value;
+        setBTime(value);
     }
 
     const notify = () => toast("WOW Congratulations!! You have completed your exercise today. You can take a break now. Thank you for using our service. Have a nice day.");
+
 
     return (
         <div>
@@ -70,11 +89,11 @@ const Profile = ({time}) => {
 
                 <div className='exercise-details'>
                     <h4>Exercise time</h4>
-                    <h4>{total} seconds</h4>
+                    {exerciseTime ? <h4>{exerciseTime} seconds</h4> : <h4>0 seconds</h4>}
                 </div>
                 <div className='exercise-details'>
                     <h4>Break time</h4>
-                    <h4><span id='showTime'>00</span> seconds</h4>
+                    <h4><span id='showTime'>0</span> seconds</h4>
                 </div>
 
                 <button onClick={notify} className='activity-completed-btn'>Activity Completed</button>

@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import image from './HR_Shohel.png';
 import './Profile.css';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = ({time}) => {
      let total = 0;
@@ -19,6 +21,7 @@ const Profile = ({time}) => {
         showTime.innerText = value;
     }
 
+    const notify = () => toast("WOW Congratulations!! You have completed your exercise today. You can take a break now. Thank you for using our service. Have a nice day.");
 
     return (
         <div className='profile'>
@@ -73,7 +76,8 @@ const Profile = ({time}) => {
                     <h4><span id='showTime'>00</span> seconds</h4>
                 </div>
 
-                <button className='activity-completed-btn'>Activity Completed</button>
+                <button onClick={notify} className='activity-completed-btn'>Activity Completed</button>
+                <ToastContainer />
         </div>
     );
 };

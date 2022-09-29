@@ -9,9 +9,9 @@ const Card = ({handleAddToExercise,card}) => {
 
   function handleClick() {
     setButtonText('Item Added');
-    setDisable(true)
+    setDisable(true);
     handleAddToExercise(card);
-    setIsActive(current => !current);
+    setIsActive(false);
   }
     return (
         <div className="card">
